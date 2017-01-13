@@ -1,1 +1,30 @@
 // main: ../main.scss
+
+footer {
+  .footer-container {
+    margin-top: 30px;
+    padding: 25px 0px 25px 0px;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 33px;
+    a {
+      font-size: 14px;
+      color: $black;
+      &:hover {
+        @extend %footer-a-state;
+      }
+      &:focus {
+        @extend %footer-a-state;
+      }
+    }
+  }
+
+  p {
+    font-size: 12px;
+    color: $black;
+    margin-left: 18px;
+  }
+}
