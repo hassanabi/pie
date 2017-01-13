@@ -1,0 +1,66 @@
+// main: ../main.scss
+
+.navbar {
+  border: none;
+  border-radius: 1px;
+}
+
+.nav-container {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+%a-state {
+  color: $blue;
+  background-color: transparent;
+}
+
+.navbar-default {
+  background-color: #fff;
+
+  .menu-items {
+    > li {
+      > a {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        color: $black * 2.8;
+      }
+    }
+    .active {
+      > a {
+        color: $blue;
+        font-weight: 600;
+        background-color: transparent;
+        &:hover {
+          @extend %a-state;
+        }
+        &:focus {
+          @extend %a-state;
+        }
+      }
+    }
+  }
+
+  .user-menu {
+    > li {
+      > a {
+        font-size: 14px;
+        color: $black;
+      }
+      &.open {
+        a:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  img {
+    width: $logo-small-width;
+    margin-top: -4px;
+  }
+}

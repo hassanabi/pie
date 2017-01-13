@@ -1,0 +1,6 @@
+// main: ../main.scss
+
+@mixin button-hover($color, $number) {
+  background-color: $color * $number;
+  border-color: $color * $number;
+}

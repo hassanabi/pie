@@ -1,0 +1,39 @@
+// main: ../main.scss
+
+%button {
+  color: #fff;
+  margin-right: 6px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(191,191,191,0.50);
+}
+
+.btn-primary {
+  @extend %button;
+  background-color: $blue;
+  border-color: $blue;
+  &:hover {
+    @include button-hover($blue, 0.9);
+  }
+}
+
+.btn-danger {
+  @extend %button;
+  background-color: $red;
+  border-color: $red;
+  &:hover {
+    @include button-hover($red, 0.9);
+  }
+}
+
+.btn-success {
+  @extend %button;
+  background-color: $green;
+  border-color: $green;
+  &:hover {
+    @include button-hover($green, 0.9);
+  }
+}
+
+.group-buttons {
+  margin-right: 10px;
+}

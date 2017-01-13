@@ -9,14 +9,227 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
     <!-- Custom -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!-- Header -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid nav-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo/logo-blue.png">
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav menu-items">
+            <li><a href="#">Donors</a></li>
+            <li><a href="#">Partners</a></li>
+            <li class="active"><a href="#">Projects</a></li>
+          </ul>
 
+          <ul class="nav navbar-nav navbar-right user-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rachel Gilbert <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Your profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Body -->
+    <section class="page-body">
+      <div class="container-fluid">
+        <div class="row filter-and-buttons">
+          <div class="col-xs-12 col-sm-12 col-md-10">
+            <h3>SSF Running Projects</h3>
+            <select class="selectpicker show-menu-arrow">
+              <option>2014</option>
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-2">
+            <div class="group-buttons">
+              <a class="btn btn-success pull-right" href="#" role="button"><i class="fa fa-check" aria-hidden="true"></i></a>
+              <a class="btn btn-danger pull-right" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i></a>
+              <a class="btn btn-primary pull-right" href="#" role="button"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="page-body-table">
+          <table class="table">
+            <h4>Mogadishu</h4>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Project Name</th>
+                <th>Partner</th>
+                <th>Budget</th>
+                <th>Spent</th>
+                <th>Balance</th>
+                <th>Utilisation</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">001</a></td>
+                <td>Strengthening community of mogadishu</td>
+                <td>Agency for Peace and Development - APD</td>
+                <td>123,900.00</td>
+                <td>98,000.00</td>
+                <td>25,900.00</td>
+                <td><span class="badge">2</span></td>
+                <td><span>Approved</span></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td><a href="#">002</a></td>
+                <td>Designing public financial management</td>
+                <td>Active Development Aid - ADA</td>
+                <td>130,500</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>-</td>
+                <td><span>Pending</span></td>
+                <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td><a href="#">003</a></td>
+                <td>Developing national security architecture</td>
+                <td>Active Development Aid - ADA</td>
+                <td>240,000.00</td>
+                <td>40,000.00</td>
+                <td>200,000.00</td>
+                <td><span class="badge">2</span></td>
+                <td><span>Approved</span></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <h4>Kismayu</h4>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Project Name</th>
+                <th>Partner</th>
+                <th>Budget</th>
+                <th>Spent</th>
+                <th>Balance</th>
+                <th>Utilisation</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">001</a></td>
+                <td>Developing national security architecture</td>
+                <td>Active Development Aid - ADA</td>
+                <td>47,000.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>-</td>
+                <td><span>Pending</span></td>
+                <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td><a href="#">002</a></td>
+                <td>Strengtheing executive government</td>
+                <td>Action for Social and Economic Progress - ASEP</td>
+                <td>130,000.00</td>
+                <td>130,000.00</td>
+                <td>100,000.00</td>
+                <td><span class="badge">2</span></td>
+                <td><span>Approved</span></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <h4>Garowe</h4>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Project Name</th>
+                <th>Partner</th>
+                <th>Budget</th>
+                <th>Spent</th>
+                <th>Balance</th>
+                <th>Utilisation</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">001</a></td>
+                <td>Enabling investment in geothermal power</td>
+                <td>Center for Peace and Democracy - CPD</td>
+                <td>230,000.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>-</td>
+                <td><span>Pending</span></td>
+                <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td><a href="#">002</a></td>
+                <td>Building research and coordination capacity</td>
+                <td>Danish Refugee Council - DRC</td>
+                <td>50,000.00</td>
+                <td>20,000.00</td>
+                <td>30,000.00</td>
+                <td><span class="badge">2</span></td>
+                <td><span>Approved</span></td>
+                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-8">
+            <p>Copyright © 2016. All Rights Reserved</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-select.js"></script>
   </body>
 </html>
