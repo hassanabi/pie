@@ -4,3 +4,10 @@
   background-color: $color * $number;
   border-color: $color * $number;
 }
+
+@mixin shape($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border-radius: 50%;
+}

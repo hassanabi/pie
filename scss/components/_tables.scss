@@ -1,1 +1,47 @@
 // main: ../main.scss
+
+.table {
+  > thead {
+    > tr {
+      > th {
+        font-size: 14px;
+        font-weight: normal;
+        padding-left: 0px;
+        border-bottom: 1px solid #E7E7E7;
+      }
+    }
+  }
+  > tbody {
+    > tr {
+      > td {
+        padding-left: 0px;
+        border: none;
+        a {
+          color: $blue;
+          text-decoration: underline;
+        }
+        %circle {
+          margin-top: 3px;
+        }
+        .circle-success {
+          @include shape(13px, 13px, $green);
+          @extend %circle;
+        }
+        .circle-warning {
+          @include shape(13px, 13px, $orange);
+          @extend %circle;
+        }
+        .circle-danger {
+          @include shape(13px, 13px, $red);
+          @extend %circle;
+        }
+        .approved {
+          color: $green;
+        }
+        .pending {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
